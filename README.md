@@ -7,7 +7,8 @@ Chat with Pub/Sub.
 * `Redis;`
 * `Express;`
 * `Dotenv;`
-* `Nodemon.`
+* `Nodemon;`
+* `NodeJS`.
 
 ## Requisites:
 The objective of this mini-project is to create a chat system using a Publisher/Subscriber mechanism.
@@ -35,7 +36,7 @@ To start the Redis container in docker run the file run.sh:
 
 
 ## Back-end
-To run the code, go to the project's backend directory, enter the src folder and run the following commands:
+To run the code, go to the project's backend directory, and run the following commands:
 
 ### Install requisites:
 * `yarn install`
@@ -43,5 +44,15 @@ To run the code, go to the project's backend directory, enter the src folder and
 ### Finally run it:
 * `yarn start`
 
-### Access the APP in the browser:
+### The application will be available through the following URL:
 http://localhost:3000
+
+### To send a message in the chat use the following URL:
+
+* `http://localhost:3000/enviarMensagem/:user/:message`
+1. **user:** Name of the user sending the message.
+2. **message**: Message that will be sent to the channel.
+
+Example:
+
+http://localhost:3000/enviarMensagem/Wendel/Teste
